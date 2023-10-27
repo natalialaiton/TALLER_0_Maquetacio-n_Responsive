@@ -14,73 +14,281 @@
     --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
 
-*{
-    margin:0;
-}
-body{
+/* Restablece los márgenes de todos los elementos a 0 */
+/* Esto evita márgenes predeterminados que pueden afectar el diseño */
+/* También define el tamaño de fuente base y la familia de fuentes para el cuerpo del documento */
+
+/* * {
+    margin: 0;
+} */
+
+/* Configura la fuente y el tamaño de fuente para el cuerpo del documento */
+/* En este caso, se utiliza la fuente 'Roboto' y se establece el tamaño de fuente en 16px */
+
+/* body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     width: 100%;
-}
-h1,h2,h3,h4,h5{
-    font-family: 'Marcellus', serif;
-}
+} */
 
-nav{
+/* Configura la fuente y el tamaño de fuente para los encabezados (h1, h2, h3, h4, h5) */
+/* Se utiliza la fuente 'Marcellus' y se establece el tamaño de fuente según el encabezado */
+
+/* h1, h2, h3, h4, h5 {
+    font-family: 'Marcellus', serif;
+} */
+
+/* Estilos para la barra de navegación */
+/* Se utiliza flexbox para alinear elementos y crear un menú */
+
+/* nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--negro);
     font-family: 'Marcellus', serif;
     font-size: 1.3em;
-     padding: 1rem;
-    }
-
-.item{
     padding: 1rem;
-    }
+} */
 
-.menu a{
+/* Estilos para los elementos de menú */
+/* Los elementos del menú se espacian con márgenes y se ajustan los estilos de texto */
+
+/* .item {
+    padding: 1rem;
+} */
+
+/* Estilos para los enlaces del menú */
+/* Se configura el color del texto y se elimina el subrayado */
+
+/* .menu a {
     color: var(--blanco);
     text-decoration: none;
-}
+} */
 
-.navbar-button{
-background-color: var(--azuloscuro);
-padding: 0.5rem 1rem;
-color: var(--blanco);
-border-radius: 5px;
-font-family: 'Marcellus', serif;
-font-size: 1em;
-}
+/* Estilos para los botones de la barra de navegación */
+/* Los botones tienen un fondo azul oscuro y se aplican estilos de texto */
 
-.menu i{
-margin-right: 0.5rem;
-}
+/* .navbar-button {
+    background-color: var(--azuloscuro);
+    padding: 0.5rem 1rem;
+    color: var(--blanco);
+    border-radius: 5px;
+    font-family: 'Marcellus', serif;
+    font-size: 1em;
+} */
 
-.logo img{
-height: 3rem;
-}
+/* Estilos para los íconos en el menú */
+/* Se agrega un margen derecho para separar los íconos del texto */
 
-#features{
+/* .menu i {
+    margin-right: 0.5rem;
+} */
+
+/* Estilos para el logotipo en la barra de navegación */
+/* Ajusta la altura de la imagen del logotipo */
+
+/* .logo img {
+    height: 3rem;
+} */
+
+/* Estilos para la sección de características (features) */
+/* Configura el fondo de la sección y los estilos de texto */
+
+/* #features {
     background: url(../img/index/bg-features.png);
     color: white;
     padding-top: 1rem;
-    }
-    .features-title{
-    background-color: rgba(0,0,0,0.35);
+} */
+
+/* Estilos para el título de características (features) */
+/* Agrega un fondo semitransparente y establece el tamaño de fuente */
+
+/* .features-title {
+    background-color: rgba(0, 0, 0, 0.35);
     text-align: center;
     padding: 0.5rem;
     font-size: 1.5em;
+} */
+
+/* Estilos para las descripciones de características (features) */
+/* Utiliza flexbox para distribuir las características horizontalmente */
+
+/* .features-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+/* Estilos para cada característica individual */
+/* Establece el ancho, el margen y los estilos de texto */
+
+/* .feature {
+    width: 25%;
+    min-width: 180px;
+    max-width: 230px;
+    margin: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+} */
+
+/* Estilos para los íconos dentro de las características */
+/* Ajusta el tamaño y el margen inferior de los íconos */
+
+/* .feature i {
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+} */
+
+/* Estilos para características con fondo azul */
+/* Configura el fondo de estas características */
+
+/* .feature-blue {
+    background-color: #00325eae;
+} */
+
+/* Estilos para características con fondo negro semitransparente */
+/* Configura el fondo de estas características */
+
+/* .feature-black {
+    background-color: rgba(0, 0, 0, 0.59);
+} */
+
+
+.logo{
+    background-color: var(--negro2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo img{
+    width: 40%;
+    max-width: 200px;
+}
+
+.logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+}
+        
+.menu{
+    background-color: rgba(1, 10, 52, 0.838);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-hr{
+    width: 90%;
+    background-color: var(--blanco);
+}
+
+    .item{
+    padding: 1rem;
+}
+
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: #0B3860;
+    width: 100%;
     }
 
-.features-description{
+.navbar-button{
+    background-color:transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
+
+/*Resolución tablet*/
+@media screen and (min-width: 768px){
+}
+
+/*Resolución notebooks*/
+@media screen and (min-width: 1024px){
+    
+    nav{
+        display: flex;
+        flex-direction: row; /*cambiamos la disposición de los elementos*/
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--negro2);
+    }
+    .logo{
+        padding: 1rem;
+    }
+
+    .logo img{
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .logo i{ /*ocultamos el ícono bars del menú hamburguesa*/
+        display: none;
+    }
+
+    .menu{
+        background-color: var(--negro2);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu-hr{ /*ocultamos la barra de división*/
+        display: none;
+    }
+    .navbar-button{
+        background-color:var(--azuloscuro);
+    }
+}
+
+/*Resolución notebooks*/
+@media screen and (min-width: 1308px){
+}
+
+#features {
+    background: url(../img/index/bg-features.png);
+    color: white;
+    padding-top: 1rem;
+}
+
+/* Estilos para el título de características (features) */
+/* Agrega un fondo semitransparente y establece el tamaño de fuente */
+
+.features-title {
+    background-color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+/* Estilos para las descripciones de características (features) */
+/* Utiliza flexbox para distribuir las características horizontalmente */
+
+.features-description {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.feature{
+/* Estilos para cada característica individual */
+/* Establece el ancho, el margen y los estilos de texto */
+
+.feature {
     width: 25%;
     min-width: 180px;
     max-width: 230px;
@@ -93,16 +301,24 @@ height: 3rem;
     border-radius: 5px;
 }
 
-.feature i{
-font-size: 2.2em;
-margin-bottom: 1.5rem;
+/* Estilos para los íconos dentro de las características */
+/* Ajusta el tamaño y el margen inferior de los íconos */
+
+.feature i {
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
 }
 
-.feature-blue{
+/* Estilos para características con fondo azul */
+/* Configura el fondo de estas características */
+
+.feature-blue {
     background-color: #00325eae;
 }
 
-    .feature-black{
-    background-color: rgba(0,0,0,0.59);
-}
+/* Estilos para características con fondo negro semitransparente */
+/* Configura el fondo de estas características */
 
+.feature-black {
+    background-color: rgba(0, 0, 0, 0.59);
+}
